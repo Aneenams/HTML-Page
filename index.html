@@ -14,18 +14,26 @@
   <body>
 <!-- navbar  -->
 
-        <div class="w-100 nav-box1 container-fluid bg-dark">
-            <div class="row">
-                <div class="col-8 d-flex justify-content-start align-items-center">
+        <div class="navbar navbar-dark bg-dark">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="d-flexalign-items-center">
                     <h1 class="text-light">My<span class="text-info">Brand</span></h1>
                 </div>
-                <div class="col-2 text-light d-flex justify-content-center align-items-center gap-4">
+                <div class=" text-light d-flex justify-content-center align-items-center gap-4">
                     <span>Home</span>
                     <span>About</span>
                     <span>Services</span>
                     <span>Blog</span>
                     <span>Contact</span>
                 </div>
+
+                <form class="d-flex ">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search...." id="">
+                    </div>
+
+                    <button class="btn btn-primary ms-2">Search</button>
+                </form>
             
             </div>
         </div>
@@ -196,7 +204,8 @@
 
 
 <div class="container-fluid m-4">
-    
+    <div class="row">
+    <div class="col-8">
         <h1>Data Table</h1>
         <table border="2px" cellspacing="0" cellpadding="20px">
             
@@ -231,7 +240,7 @@
                     <td>Sneha</td>
                     <td>sneha@gmail.com</td>
                     <td>Tester</td>
-                    <td class="bg-danger rounded-5">Inactive</td>
+                    <td class="bg-danger rounded-5 w-25 ">Inactive</td>
                 </tr>
             
 
@@ -248,10 +257,6 @@
 
      
 
-</div>
-
-
-
 
 <!-- Data Table end-->
 
@@ -259,8 +264,12 @@
 
 <!-- pagination start -->
 
+<div class="mt-3">
+        <h2>Pagination</h2>
 
-<ul class="pagination">
+<ul class="pagination mt-2">
+    
+    
     <li class="page-item">
         <a href="" class="page-link"> < </a>
     </li>
@@ -284,9 +293,37 @@
     </li>
 
 </ul>
+</div>
 
 
+</div>
 
+
+<!-- Alert start -->
+
+    <div class="col-4">
+        <h2>Alerts</h2>
+        <div class="alert alert-success alert-dismissible ">
+    <button class="btn btn-close " data-bs-dismiss="alert"></button>
+    ✅ Success! Your changes have been saved
+</div>
+
+<div class="alert alert-info alert-dismissible ">
+    <button class="btn btn-close " data-bs-dismiss="alert"></button>
+    ℹ️ Info! this is an informational message
+</div>
+<div class="alert alert-warning alert-dismissible ">
+    <button class="btn btn-close " data-bs-dismiss="alert"></button>
+    ⚠️Warning! Please check your input
+</div>
+<div class="alert alert-danger alert-dismissible ">
+    <button class="btn btn-close " data-bs-dismiss="alert"></button>
+    ❌Error! Something went wrong
+</div>
+    </div>
+    </div>
+
+</div>
 
 
 
@@ -298,13 +335,21 @@
 <!-- footer start -->
 
 
-<div class="container-fluid w-100 bg-dark">
+<div class="container-fluid w-100  bg-dark mt-4" >
     <div class="row">
         <div class=" col-8">
             <h6 class=" text-light "> &copy; 2025 My<span class="text-info">Brand.</span> All rights reserved.</h6>
         </div>
+        <div class="col-4 d-flex align-items-center justify-content-end  gap-2">
+                    <i class="fa-brands fa-facebook fa-lg" style="color: rgb(116,192,252) "></i>
+                    <i class="fa-brands fa-twitter fa-lg" style="color: rgb(116,192,252) "></i>
+                    <i class="fa-brands fa-linkedin fa-lg" style="color: rgb(116,192,252) "></i>
+                    <i class="fa-brands fa-instagram fa-lg" style="color: rgb(116,192,252) "></i>
+                    <i class="fa-brands fa-youtube fa-lg" style="color: rgb(116,192,252) "></i>
+                </div>
 
     </div>
+    
 
 </div>
 
@@ -318,7 +363,7 @@
 
 
 
-<!-- footer start -->
+<!-- footer end -->
 
 
 
